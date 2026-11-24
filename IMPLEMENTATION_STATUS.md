@@ -1,25 +1,24 @@
 # Implementation status
 
-## Completed
-- Next.js App Router with static export, `/bn` and `/en` route trees, locale chooser, responsive editorial styling, navigation, metadata, 404, sitemap and robots output.
-- 34 locally illustrated food profiles with Zod validation and linked general references. All remain editorial drafts; unknown composition quantities are never fabricated.
-- Food listing and detail pages, nutrient directory/details, seven health topic pages, nine article routes, safety and organic-claims literacy, habits, approximate seasonality explainer, methodology, editorial and privacy pages.
-- Browser-local BMI tool with screening caveats, plate builder with unavailable-total handling, comparison with unavailable-value handling, illustrative label interaction, and 12-question quiz.
-- Local Bangla/English food and article search, content validation, unit tests, project/deployment docs, generated Pagefind index.
-- `pnpm build` statically generated 164 routes plus sitemap/robots; Pagefind indexed 161 HTML pages. Key food/topic/article/tool route files and Pagefind assets were checked in `out/`.
+## Completed in this iteration
+- Expanded all 36 foods to validated structured records with aliases, exact/unknown form, edible portion, serving basis, nutrient values and statuses, evidence references, meal roles, purchase/storage notes, do/don’t guidance, myths, allergen cautions, Bangladesh context, and editorial status.
+- Verified the FAO/University of Dhaka 2013 Food Composition Table PDF methodology and exact entries for guava, Sagar banana, emblic, hog plum, ripe jackfruit and ripe papaya. Only clear, non-bracketed components are populated, per 100 g fresh edible portion. The exact entry code and citation appear beside every number. Other values stay `null`.
+- Added a working food category/name filter, an interactive nutrient concept explorer that distinguishes measured values from unknowns, and a three-food comparison that aligns sourced components and shows missing values.
+- Replaced the shared article body with nine distinct bilingual, sectioned educational guides, sources, editorial-draft status, table of contents, and related-food links.
+- Added English versions for food profiles, nutrient pages and health-topic explanations. Existing BMI, quiz, plate and label tools remain functional.
+- Added tests for food/evidence schemas, exact data matches, unknown value handling, and article source/food relations. Last export generated 172 static routes plus sitemap/robots and indexed 169 HTML pages (2,268 words) with Pagefind; representative bilingual profiles/articles and index assets exist in `out/`.
 
-## Pending before public launch
-- Extract exact Bangladesh Food Composition Table entries and record table identifiers, edible portions, preparations, units, access dates and evidence quality before publishing any numerical nutrient values.
-- Clinical dietitian/physician review. Health pages are generic educational drafts, not individualized recommendations or clinically reviewed content.
-- Complete English translation for secondary detail content; currently many English routes include Bengali explanatory prose.
-- Distinct substantial article text for each title; the nine article routes currently share a shorter general food-safety guide body.
-- Expand Food schema to include aliases, servings, nutrient-value/evidence records, dietary roles, allergens, myths and per-food buying/storage guidance; current seed records are a smaller validated subset.
-- Nutrient annotation map, sourced serving controls, more complete plate portion controls, category filters, and substantiated month/division seasonality data.
-- Pagefind runtime query test, Playwright journeys, measured Lighthouse review, and verified BFSA/BSTI regulation citations.
+## Remaining before public launch
+- Extract and verify more FCT entries; many of the 36 food records still have no exact match, and no raw/cooked values are inferred across forms.
+- Clinical dietitian/physician review. Health pages remain general educational drafts and do not provide individualized disease guidance.
+- Complete English translations across all safety, methodology, editorial, seasonal and secondary informational pages.
+- Topic-specific disease profile content, BMI South Asian action-point details, nutrient annotation art, additional known local serving weights, portion controls in the plate builder, and substantiated regional seasonality.
+- Verify BFSA/BSTI regulation text; the official BFSA portal is only a starting link.
+- Runtime Pagefind query and Playwright journeys; Pagefind indexing and static routes are generated but these checks have not been run in a browser.
 
 ## Limitations
+- The FAO/University of Dhaka table reports averages for same or similar descriptions; cultivars and preparations differ. Values shown stay attached to their exact entry and are marked limited evidence.
+- The Bangladesh National Dietary Guidelines PDF exceeded the research tool’s fetch limit; no claims depend on unextracted content.
 - Seasonal content deliberately avoids unsupported month/division claims.
 - Food imagery uses original SVG illustrations, not licensed photography.
-- BMI includes adult screening categories and limitations; South Asian action points need a more complete sourced explanation.
-- Food descriptors and safety advice need editorial review; a general WHO food-safety reference does not substantiate composition or specific local-food claims.
-- Static educational site only: no accounts, backend, seller claims, payments, analytics or clinical advice.
+- No accounts, backend, seller claims, payments, analytics or clinical advice are included.

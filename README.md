@@ -31,4 +31,4 @@ Cloudflare Pages: build command `pnpm build`, output directory `out`, Node 20+ a
 
 ## Editorial workflow
 
-Edit Zod-validated data in `src/lib/content.ts`, then run `pnpm validate-content` and the checks. Add source metadata and exact preparation/table identifiers before adding composition figures. Current numeric food composition values are intentionally absent. Review labels must reflect actual review evidence. See `CONTENT_POLICY.md` and `EVIDENCE_METHOD.md`.
+Edit Zod-validated data in `src/lib/content.ts`, then run `pnpm validate-content` and the checks. Add source metadata and exact preparation/table identifiers before adding composition figures. Exact FCT 2013 values are recorded for six cultivar/preparation-matched fruits only; unmatched records remain null. See `src/data/sources/manifest.json` and `EVIDENCE_METHOD.md`. Review labels must reflect actual review evidence. See `CONTENT_POLICY.md` and `EVIDENCE_METHOD.md`.
