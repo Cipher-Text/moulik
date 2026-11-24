@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function Root(){return <main className="splash"><div><p className="logo">মৌলিক</p><h1>খাবারকে জানুন, জীবনকে ভালো রাখুন।</h1><p>আপনার ভাষা বেছে নিন</p><p><Link className="button" href="/bn/">বাংলা</Link>　<Link className="button" href="/en/">English</Link></p></div></main>}

@@ -1,0 +1,1 @@
+import Link from 'next/link';export default function NotFound(){return <main className="splash"><div><span className="eyebrow">404 · পৃষ্ঠা পাওয়া যায়নি</span><h1>এই পাতাটি খুঁজে পাওয়া গেল না</h1><Link className="button" href="/bn/">মৌলিকের শুরুতে ফিরুন</Link></div></main>}

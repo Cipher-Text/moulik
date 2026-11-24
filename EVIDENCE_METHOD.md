@@ -1,0 +1,5 @@
+# Evidence method
+
+Quantitative food composition requires a traceable source URL, publisher, year, exact table/food identifier, unit, edible portion, preparation and evidence quality. Never apply raw values to cooked food or convert without a matching basis. Unknown values remain null and are presented as “তথ্য যাচাই চলছে / Data not yet verified.”
+
+Starting sources: [Bangladesh National Dietary Guidelines 2025](https://cdn.who.int/media/docs/default-source/searo/bangladesh/national-dietary-guidelines-for-bangladesh.pdf), [FAO/University of Dhaka Food Composition Table for Bangladesh (2013)](https://www.fao.org/food-composition/tables-and-databases/detail/%28country--date%29-title-1/en), [WHO healthy diet](https://www.who.int/news-room/fact-sheets/detail/healthy-diet), and [WHO Five Keys to Safer Food](https://www.who.int/activities/promoting-safe-food-handling/five-key-to-safer-food). Food-table exact-entry extraction remains pending, so the app publishes no food nutrient quantities. BFSA is linked as an official starting point, not treated as a verified regulation citation.
